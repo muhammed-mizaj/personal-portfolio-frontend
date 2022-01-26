@@ -11,6 +11,7 @@ import Skills from './pages/Skills'
 import React,{useState,useEffect} from 'react';
 import Home from './pages/Home';
 import Dropdown from './Components/Dropdown';
+import Footer from './Components/Footer';
 function App() {
   const [isOpen,setIsOpen]=useState(false)
   const toggle=()=>{
@@ -44,6 +45,7 @@ function App() {
             <Route path='/services' element={<Services/>}/>
             
           </Routes>
+          
           </div>
   );
 }
