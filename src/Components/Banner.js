@@ -14,7 +14,7 @@ const Banner = () => {
             Hello,My name is  
           </h1>
 
-      <h1 class="mb-5 text-6xl font-bold text-green-600">
+      <h1 class="mb-5 font-extrabold text-transparent text-8xl bg-clip-text bg-gradient-to-r from-green-600 to-purple-400">
             Muhammed
           </h1>
       <p class="mb-5">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SkillItem = () => {
+const SkillItem = ({name}) => {
   return <div>
       
   </div>;
