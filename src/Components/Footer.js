@@ -48,7 +48,7 @@ const Footer = () => {
 
           <p>
             {" "}
-            Created By <span className="text-green-600">MdDevolopers</span> |
+            Created By <span className="text-transparent bg-clip-text bg-gradient-to-l from-green-600 to-purple-500">MdDevolopers</span> |
             &copy; 2022 All rights reserved.
           </p>
         </div>

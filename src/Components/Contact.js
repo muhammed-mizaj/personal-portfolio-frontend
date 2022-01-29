@@ -1,10 +1,11 @@
 import React from 'react';
+import SocialMedia from './SocialMedia';
 import Title from './Title';
 
 const Contact = () => {
   return <div>
     <Title title={"Contact me"}/>
-    <div className='flex flex-row'>
+    <div className='md:flex md:flex-row '>
 
     
       <div className='flex basis-1/2'>
@@ -43,6 +44,10 @@ const Contact = () => {
 <button className='m-4 btn glass hover:bg-gradient-to-r from-green-600 to-purple-400'>Help me!</button>
     </form>
     
+      </div>
+      <div className='flex basis-1/2'>
+        
+      <SocialMedia/>
       </div>
     </div>
     
