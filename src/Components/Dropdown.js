@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 const Dropdown = ({isOpen,toggle}) => {
-  return <div className={isOpen? 'grid grid-rows-4 text-center items-center bg-gradient-to-r from-[#20BF55] to-[#5add4e]':'hidden'} onClick={toggle}>
+  return <div className={isOpen? 'grid grid-rows-4 text-center items-center bg-gradient-to-r from-green-600 to-purple-600':'hidden'} onClick={toggle}>
       
      <Link className='p-4' to='/'>Home</Link>
      <Link className='p-4' to='/about'>About</Link>

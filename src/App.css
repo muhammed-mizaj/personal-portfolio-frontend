@@ -1,3 +1,4 @@
+
 .aboutcard
 {
     margin:0;
@@ -99,3 +100,19 @@
 {
     display: none;
 }
+.card2
+{
+    display: block;
+}
+.card2 .card_back
+{
+    display: none;
+}
+.card2:hover .card_back
+{
+    display: block;
+}
+.card2:hover .card_front
+{
+    display: none;
+} 

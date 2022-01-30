@@ -5,16 +5,16 @@ const SocialMedia = () => {
   return (
     <div className='aboutcard '>
       <div className='aboutcard2 '>
-      <div className='card bg-gray-900'>
+      <div className='card bg-slate-800'>
           <div className='imgBox '>
 <img src={mypic}/>
           </div>
           <div className='details'>
             <div className='content'>
-              <h2 className='text-green-700 text-4xl'>Muhammed
+              <h2 className='text-transparent bg-clip-text bg-gradient-to-r from-green-600 via-blue-700 to-purple-600 text-4xl'>Muhammed
                 <br />
                 <span className=''>
-                  <h6 className='text-purple-700 text-lg'>Student</h6>               
+                  <h6 className='text-transparent bg-clip-text bg-gradient-to-r from-purple-600  to-green-600 text-lg'>Student</h6>               
                 </span>
                 
               </h2>

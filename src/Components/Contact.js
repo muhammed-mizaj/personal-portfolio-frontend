@@ -45,7 +45,7 @@ const Contact = () => {
     </form>
     
       </div>
-      <div className='flex basis-1/2'>
+      <div className='flex basis-1/2 mt-[60px] p-3'>
         
       <SocialMedia/>
       </div>

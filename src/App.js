@@ -32,7 +32,7 @@ function App() {
     }
   }) 
   return (
-    <div className="App">
+    <div className="App bg-slate-900">
       
           <Navbar toggle={toggle}/>
           <Dropdown isOpen={isOpen} toggle={toggle}/>

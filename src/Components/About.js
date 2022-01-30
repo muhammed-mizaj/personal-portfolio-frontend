@@ -10,7 +10,7 @@ import SocialMedia from "./SocialMedia";
 import Title from "./Title";
 const About = () => {
   return (
-    <div>
+    <div className="bg-slate-900 sm:h-screen">
       <Title title={"About me"} />
       <div className="md:flex flex-row">
       <div className="flex basis-1/2 p-5">
@@ -19,7 +19,7 @@ const About = () => {
 <div class="divider divider-vertical"></div> 
 
       <div className="flex basis-1/2 pl-5">
-      <img  src={myImage} className="w-72 h-72 rounded-full object-cover"/>
+      <img  src={myImage} className="w-36 h-36 rounded-full object-cover"/>
 </div>
 
       
