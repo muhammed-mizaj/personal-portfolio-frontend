@@ -1,7 +1,11 @@
 import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+
 
 import '../App.css'
 import logo from '../assets/images/md.png'
+AOS.init();
 const WorkItem = ({project}) => {
   return (
     // <div class="card  hover:bg-green-600  ">
@@ -25,8 +29,8 @@ const WorkItem = ({project}) => {
     //                   </div>
                      
     //               </div>
-<div>
-<div class="card2 rounded-lg shadow-lg bg-slate-800 h-[350px] w-[300px]">
+<div >
+<div class="card2 rounded-lg shadow-lg bg-slate-800 h-[350px] w-[300px] card aos-init aos-animate" data-aos="fade-down" aos-delay="4000">
   <div className='card_front'>
   <a href="#">
 <img class="rounded-t-lg w-full h-[250px] bg-slate-700"  src={logo} alt=""/>
@@ -54,12 +58,14 @@ const WorkItem = ({project}) => {
     </h1>
     
   
-  <div className='absolute bottom-4 pl-[100px]'>
-    <a href={project.sourcecodelink} className='p-2 text-black hover:text-blue-500 cursor-pointer ' target="_blank">
+  <div className='absolute bottom-4 pl-[100px] flex '>
+    <a href={project.sourcecodelink} className='p-2 text-blue-700 rounded-full bg-black hover:text-blue-500 cursor-pointer ' target="_blank">
     <i class="fas fa-code"></i>
 
     </a>
-    <a href={project.view_link} className='p-2 text-black hover:text-blue-500 cursor-pointer' target="_blank">
+    &nbsp;
+    
+    <a href={project.view_link} className='p-2  text-blue-700 rounded-full bg-black hover:text-blue-500 cursor-pointer' target="_blank">
     <i class="far fa-eye"></i>
     </a>
   
