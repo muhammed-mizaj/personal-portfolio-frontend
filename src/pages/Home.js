@@ -8,7 +8,7 @@ import Skills from './Skills';
 import Works from './Works';
 
 const Home = () => {
-  return (<div className='bg-slate-900'>
+  return (<div className='bg-slate-900 h-screen'>
       <Banner />
       {/* <About />
       <Skills />

@@ -3,7 +3,7 @@ import SocialMedia from './SocialMedia';
 import Title from './Title';
 
 const Contact = () => {
-  return <div>
+  return <div className='h:full md:h-full bg-slate-900'>
     <Title title={"Contact me"}/>
     <div className='md:flex md:flex-row '>
 

@@ -3,7 +3,7 @@ import SkillItem from '../Components/SkillItem';
 import Title from '../Components/Title';
 
 const Skills = () => {
-  return <div className='md:h-full h-full lg:h-screen bg-slate-900'>
+  return <div className='h:full md:h-screen lg:h-screen bg-slate-900'>
     <Title title={"Stacks"}/>
     <div class="container mx-auto">
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 p-2">

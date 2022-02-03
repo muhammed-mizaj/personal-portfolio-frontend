@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 AOS.init();
 const Services = () => {
-  return <div className=' h:full md:h-screen bg-slate-900'>
+  return <div className='h-screen bg-slate-900'>
       <Title title={"Services"}/>
       <div className='mt-8 grid lg:grid-cols-3 md:grid-cols-2 gap-10 p-2 flex-1 justify-center'>
           

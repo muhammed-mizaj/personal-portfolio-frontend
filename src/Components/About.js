@@ -10,7 +10,7 @@ import SocialMedia from "./SocialMedia";
 import Title from "./Title";
 const About = () => {
   return (
-    <div className="bg-slate-900 sm:h-screen">
+    <div className="bg-slate-900 h-screen">
       <Title title={"About me"} />
       <div className="md:flex flex-row">
       <div className="flex basis-1/2 p-5">
