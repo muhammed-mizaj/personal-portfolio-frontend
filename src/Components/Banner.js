@@ -6,9 +6,9 @@ const Banner = () => {
 
   return (
 
-<div class="hero  bg-slate-900 h:full md:h-screen">
+<div class="hero  bg-slate-900 h:full md:h-screen p-5">
   <div class="md:flex-col md:hero-content lg:flex-row-reverse">
-    <img src={myImage} class="max-w-sm rounded-lg shadow-2xl"/> 
+    <img src={myImage} class=" rounded-lg shadow-2xl sm:max-w-sm"/> 
     <div>
       <h1 class="mb-5 text-2xl font-bold">
             Hello,My name is  
