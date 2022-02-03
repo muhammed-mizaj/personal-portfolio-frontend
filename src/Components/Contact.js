@@ -41,7 +41,7 @@ const Contact = () => {
   </label> 
   <textarea class="textarea h-24 textarea-bordered" placeholder="Describe project"></textarea>
 </div>
-<button className='m-4 btn glass hover:bg-gradient-to-r from-green-600 to-purple-400'>Help me!</button>
+<button className='m-4 btn hover:glass bg-gradient-to-r from-green-600 to-indigo-900'>Help me!</button>
     </form>
     
       </div>
