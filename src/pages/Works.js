@@ -35,7 +35,7 @@ const Works = () => {
         </div>
         
       </div>
-    ):(<Loading/>)
+    ):(<Loading className=''/>)
       }
     </div>
     );
