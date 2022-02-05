@@ -19,9 +19,9 @@ const Works = () => {
     console.log("data",data);
   }
   return (
-    <div className='h-screen bg-slate-900'>
+    <div className='h-full bg-slate-900'>
       {
-        loading?(<div className='h-screen bg-slate-900'>
+        loading?(<div className='h-full bg-slate-900'>
         <Title title={"Projects"}/>
         <div className='flex justify-center pb-4'>
         <div className=' grid sm:grid-cols-2 lg:grid-cols-3 md:grid-cols-2 gap-6'>
