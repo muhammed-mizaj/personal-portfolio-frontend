@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react';
 import Loading from '../Components/Loading';
 import Title from '../Components/Title';
 import WorkItem from '../Components/WorkItem';
+import { BASE_URL } from '../constants/urls';
 
 const Works = () => {
   let [projects,setProjects]=useState([]);
@@ -13,7 +14,7 @@ const Works = () => {
     })
   },[])
   let getProjects=async()=>{
-    let response=await fetch('https://gentle-cliffs-06232.herokuapp.com/api/projects')
+    let response=await fetch(BASE_URL+'/api/projects')
     // let response=await fetch('http://127.0.0.1:8000/api/projects')
     let data = await response.json()
     setProjects(data)
