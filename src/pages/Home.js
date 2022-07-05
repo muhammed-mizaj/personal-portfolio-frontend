@@ -8,14 +8,14 @@ import Skills from './Skills';
 import Works from './Works';
 
 const Home = () => {
-  return (<div className='bg-slate-900 h-screen'>
+  return (<div className='bg-slate-900 min-h-screen flex flex-col'>
       <Banner />
-      {/* <About />
+      <About />
       <Skills />
-      <Works />
+      {/* <Works />
       <Services />
-      <Contact /> */}
-      <Footer />
+      <Contact />*/}
+      
   </div>);
 };
 

@@ -33,7 +33,7 @@ const WorkItem = ({project}) => {
 <div class="card2 rounded-lg shadow-lg bg-slate-800 h-[350px] w-[300px] card aos-init aos-animate" data-aos="fade-down" aos-delay="4000">
   <div className='card_front'>
   <a href="#">
-<img class="rounded-t-lg w-full h-[250px] bg-slate-700"  src={logo} alt=""/>
+<img class="rounded-t-lg w-full h-[250px] bg-slate-700"  src={`https://gentle-cliffs-06232.herokuapp.com`+project.image} alt=""/>
 
 </a>
 <div class="h1-2">

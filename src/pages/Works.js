@@ -14,9 +14,11 @@ const Works = () => {
   },[])
   let getProjects=async()=>{
     let response=await fetch('https://gentle-cliffs-06232.herokuapp.com/api/projects')
+    // let response=await fetch('http://127.0.0.1:8000/api/projects')
     let data = await response.json()
     setProjects(data)
     console.log("data",data);
+
   }
   return (
     <div className='h-full bg-slate-900'>
