@@ -23,7 +23,7 @@ const Projects = ({ isDarkTheme }) => {
     }, 2000);
   }, []);
 
-  const visibleProjects = showMore ? projects : projects.slice(0, 3);
+  const visibleProjects = showMore ? projects : projects.slice(0, 4);
 
   return (
     <div className="container mx-auto py-10 px-5 sm:px-10">

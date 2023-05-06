@@ -45,6 +45,7 @@ function App() {
       <div class="border-t border-[#111]"></div>
       <Skills/>
       <div class="border-t border-[#111]"></div>
+      {/* <Contact isDarkTheme={isDarkTheme}/> */}
       <Footer/>
     </div>
   );
