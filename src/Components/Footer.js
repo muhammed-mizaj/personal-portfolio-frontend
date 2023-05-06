@@ -7,7 +7,6 @@ const Footer = () => {
         <div className="items-center grid-flow-col gap-4 place-self-center">
 
           <p>
-            {" "}
             Created By <span className="">MdDevolopers</span> |
             &copy; 2023 All rights reserved.
           </p>
