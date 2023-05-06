@@ -1,15 +1,27 @@
 import React from 'react';
 import mypic from '../assets/images/Muhammed_.jpg';
 import resume from '../assets/pdf/MyResume.pdf';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 function About({ isDarkTheme }) {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
+  }, []);
+  
   const buttonBgColor = isDarkTheme ? 'bg-[#111]' : 'bg-black';
   const buttonTextColor = isDarkTheme ? 'text-white' : 'text-white';
 
   return (
     <section className="py-16">
       <div className="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="md:flex md:flex-row-reverse items-center">
+        <div className="md:flex md:flex-row-reverse items-center" data-aos-duration="2000" data-aos="fade-left">
           <div className="md:w-1/2 lg:w-1/3 mb-8 md:mb-0">
             <img src={mypic} alt="Muhammed" className="rounded-full w-64 h-64 mx-auto md:mx-0" />
           </div>
