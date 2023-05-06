@@ -1,0 +1,15 @@
+[
+  {
+    "year": "2020 - 2022",
+    "event": "WebTeam Member",
+    "organization": "IEDC, IEEE, ACM",
+    "description": "Worked as a member of the WebTeam and contributed to the development and maintenance of the official websites of IEDC, IEEE, and ACM. Implemented various features and functionalities, including event registration, payment gateway integration, and member management."
+  },
+  {
+    "year": "2022 - 2023",
+    "event": "Backend Developer Intern",
+    "organization": "Novaluxe Yacht",
+    "description": "As a Backend Developer Intern, I worked on creating API endpoints using Django, integrated AWS S3 Bucket for file storage, implemented payment gateway integration using Stripe, and used Docker for containerization. Also collaborated with other team members to ensure timely delivery of project milestones."
+  }
+]
+

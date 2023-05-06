@@ -7,6 +7,7 @@ import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import About from './Components/About';
 import BottomNavBar from './Components/BottomNavBar';
+import Timeline from './Components/TImeline';
 
 function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
@@ -46,6 +47,7 @@ function App() {
       <Skills/>
       <div class="border-t border-[#111]"></div>
       {/* <Contact isDarkTheme={isDarkTheme}/> */}
+      <Timeline isDarkTheme={isDarkTheme}/>
       <Footer/>
     </div>
   );
