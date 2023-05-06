@@ -32,16 +32,19 @@ function App() {
 
   return (
     <div className={`${themeClasses} min-h-screen`}>
-      <button className={`absolute top-0 right-0 m-4 p-2 rounded-lg font-bold focus:outline-none focus:ring-2  focus:ring-offset-2 ${isDarkTheme ? 'bg-gray-800 text-white' : 'bg-white text-black border border-gray-800'}`} onClick={toggleTheme}>
+      <button className={`absolute top-0 right-0 m-4 p-2 rounded-lg font-bold focus:outline-none focus:ring-1  focus:ring-offset-2 ${isDarkTheme ? 'bg-[#111] text-white' : 'bg-white text-black'}`} onClick={toggleTheme}>
         {isDarkTheme ? 'Dark Mode' : 'Light Mode'}
       </button>
       <Hero/>
+      <div class="border-t border-[#111]"></div>
+
       <About isDarkTheme={isDarkTheme}/>
+      <div class="border-t border-[#111]"></div>
       {/* <Stacks/> */}
       <Projects isDarkTheme={isDarkTheme}/>
+      <div class="border-t border-[#111]"></div>
       <Skills/>
-      {/* <Contact/> */}
-      {/* <BottomNavBar/> */}
+      <div class="border-t border-[#111]"></div>
       <Footer/>
     </div>
   );

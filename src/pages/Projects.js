@@ -27,7 +27,7 @@ const Projects = ({isDarkTheme}) => {
         ))}
       </div>
       {projects.length > 3 && (
-        <button className={`mt-5 px-3 py-1 rounded ${isDarkTheme ? 'bg-white text-black' : 'bg-black text-white'}`} onClick={() => setShowMore(!showMore)}>
+        <button className={`mt-5 px-3 py-1 rounded ${isDarkTheme ? 'bg-[#111] text-white' : 'bg-black text-white'}`} onClick={() => setShowMore(!showMore)}>
           {showMore ? 'Show Less' : 'Show More'}
         </button>
       )}

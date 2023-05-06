@@ -3,8 +3,8 @@ import mypic from '../assets/images/Muhammed_.jpg';
 import resume from '../assets/pdf/MyResume.pdf';
 
 function About({ isDarkTheme }) {
-  const buttonBgColor = isDarkTheme ? 'bg-white' : 'bg-black';
-  const buttonTextColor = isDarkTheme ? 'text-black' : 'text-white';
+  const buttonBgColor = isDarkTheme ? 'bg-[#111]' : 'bg-black';
+  const buttonTextColor = isDarkTheme ? 'text-white' : 'text-white';
 
   return (
     <section className="py-16">

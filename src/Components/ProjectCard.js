@@ -14,7 +14,7 @@ const ProjectCard = ({ project,isDarkTheme}) => {
   const handleClose = () => {
     setIsOpen(false);
   };
-  const cardClass = isDarkTheme ? "max-w-sm rounded overflow-hidden shadow-lg bg-gray-900 text-white" : "max-w-sm rounded overflow-hidden shadow-lg bg-white text-gray-900";
+  const cardClass = isDarkTheme ? "max-w-sm rounded overflow-hidden shadow-lg bg-[#111] text-white" : "max-w-sm rounded overflow-hidden shadow-lg bg-white text-gray-900";
 
 
   const handleMouseEnter = () => {
@@ -37,7 +37,7 @@ const ProjectCard = ({ project,isDarkTheme}) => {
         <p className="">{project.short_desc}</p>
       </div>
       <div className="px-6 py-4">
-        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2">
           {project.stacks.map((stack) => stack.name).join(", ")}
         </span>
         {showLinks && (
@@ -47,7 +47,7 @@ const ProjectCard = ({ project,isDarkTheme}) => {
                 href={project.source_code_link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-blue-500"
+                className="hover:text-[#333]"
               >
                 <FaGithub className="inline-block mr-2" />
                 Source Code
@@ -58,7 +58,7 @@ const ProjectCard = ({ project,isDarkTheme}) => {
                 href={project.view_link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-blue-500 ml-4"
+                className="hover:text-[#333] ml-4"
               >
                 <FaExternalLinkAlt className="inline-block mr-2" />
                 View
@@ -68,7 +68,7 @@ const ProjectCard = ({ project,isDarkTheme}) => {
         )}
         <div className="mt-4">
           <button
-            className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
+            className="bg-[#333] hover:bg-[#222] text-white font-bold py-2 px-4 rounded"
             onClick={handleOpen}
           >
             Know more
