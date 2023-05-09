@@ -1,12 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import axios from 'axios';
 import Skeleton,{SkeletonTheme} from 'react-loading-skeleton';
 import ProjectCard from '../Components/ProjectCard';
 import { BASE_URL } from '../constants/urls';
 import 'react-loading-skeleton/dist/skeleton.css'
+import ThemeContext from '../contexts/ThemeContext';
 
 
-const Projects = ({ isDarkTheme }) => {
+const Projects = () => {
+  const { isDarkTheme } = useContext(ThemeContext);
+
 
   const [isLoading, setIsLoading] = useState(true);
   const [projects, setProjects] = useState([]);
@@ -42,7 +45,7 @@ const Projects = ({ isDarkTheme }) => {
           </>
         ) : (
           visibleProjects.map(project => (
-            <ProjectCard key={project.id} project={project} isDarkTheme={isDarkTheme}/>
+            <ProjectCard key={project.id} project={project}/>
           ))
         )}
       </div>

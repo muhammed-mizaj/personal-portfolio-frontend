@@ -1,11 +1,14 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import PropTypes from "prop-types";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import Modal from "./Modal";
+import ThemeContext from "../contexts/ThemeContext";
 
-const ProjectCard = ({ project,isDarkTheme}) => {
+const ProjectCard = ({ project }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [showLinks, setShowLinks] = useState(false);
+  const { isDarkTheme } = useContext(ThemeContext);
+
 
   const handleOpen = () => {
     setIsOpen(true);

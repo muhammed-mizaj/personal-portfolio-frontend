@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import mypic from '../assets/images/Muhammed_.jpg';
 import resume from '../assets/pdf/MyResume.pdf';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import ThemeContext from '../contexts/ThemeContext';
 
-function About({ isDarkTheme }) {
+function About() {
+  const { isDarkTheme } = useContext(ThemeContext);
+
   useEffect(() => {
     AOS.init({
       offset: 200,
@@ -23,7 +25,7 @@ function About({ isDarkTheme }) {
       <div className="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8">
         <div className="md:flex md:flex-row-reverse items-center" data-aos-duration="2000" data-aos="fade-left">
           <div className="md:w-1/2 lg:w-1/3 mb-8 md:mb-0">
-          <img src={mypic} alt="Muhammed" className="rounded-full object-cover object-center w-64 h-64 mx-auto md:mx-0" />
+            <img src={mypic} alt="Muhammed" className="rounded-full object-cover object-center w-64 h-64 mx-auto md:mx-0" />
           </div>
           <div className="md:w-1/2 lg:w-2/3 text-center md:text-left">
             <h1 className="text-4xl font-bold mb-6">Muhammed</h1>

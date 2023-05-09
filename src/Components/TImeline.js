@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import timelineData from './timelineData.json';
+import ThemeContext from '../contexts/ThemeContext';
 
-const Timeline = ({isDarkTheme}) => {
+const Timeline = () => {
+  const { isDarkTheme } = useContext(ThemeContext);
+
   return (
     <div className={`container mx-auto px-4 py-8 ${isDarkTheme?'bg-[#111] text-white':'bg-white text-black'}`}>
       <h2 className="text-2xl font-bold mb-4">Timeline</h2>
