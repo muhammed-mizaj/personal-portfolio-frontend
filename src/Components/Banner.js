@@ -1,9 +1,9 @@
 import React from 'react';
 import '../App.css';
 import myImage from '../assets/images/md.jpg';
-const Banner = () => {
-  const TypeIt=document.querySelector('#type1')
+import Typed from 'react-typed';
 
+const Banner = () => {
   return (
 
 <div class="hero  bg-slate-900 h:full md:h-screen p-5">
@@ -19,7 +19,12 @@ const Banner = () => {
           </h1>
       <p class="mb-5">
         <h4>
-        And I'm <span id='type1'>Devoloper</span>
+        And I'm <Typed
+                        strings={["Developer", "Programmer", "Engineer"]}
+                        typeSpeed={100}
+                        backSpeed={50}
+                        loop
+                    />
         </h4>
           
           </p> 
