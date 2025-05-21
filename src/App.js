@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import Hero from './pages/Hero';
-import Projects from './pages/Projects';
-import Skills from './pages/Skills';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
+const Hero = lazy(() => import('./pages/Hero'));
+const Projects = lazy(() => import('./pages/Projects'));
+const Skills = lazy(() => import('./pages/Skills'));
 import Footer from './Components/Footer';
-import About from './Components/About';
-import Timeline from './Components/TImeline';
+const About = lazy(() => import('./Components/About'));
+const Timeline = lazy(() => import('./Components/TImeline'));
 import ThemeContext from './contexts/ThemeContext';
 
 
@@ -36,18 +36,18 @@ function App() {
         <button className={`absolute top-0 right-0 m-4 p-2 rounded-lg font-bold focus:outline-none focus:ring-1  focus:ring-offset-2 ${isDarkTheme ? 'bg-[#111] text-white' : 'bg-white text-black'}`} onClick={toggleTheme}>
           {isDarkTheme ? 'Dark Mode' : 'Light Mode'}
         </button>
-        <Hero/>
-        <div class="border-t border-[#111]"></div>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Hero/>
+          <div class="border-t border-[#111]"></div>
 
-        <About/>
-        <div class="border-t border-[#111]"></div>
-        {/* <Stacks/> */}
-        <Projects/>
-        <div class="border-t border-[#111]"></div>
-        {/* <Skills/> */}
-        <div class="border-t border-[#111]"></div>
-        {/* <Contact/> */}
-        <Timeline/>
+          <About/>
+          <div class="border-t border-[#111]"></div>
+          <Projects/>
+          <div class="border-t border-[#111]"></div>
+          <Skills/>
+          <div class="border-t border-[#111]"></div>
+          <Timeline/>
+        </Suspense>
         <Footer/>
       </div>
     </ThemeContext.Provider>
