@@ -1,11 +1,11 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
+import Footer from './Components/Footer';
+import ThemeContext from './contexts/ThemeContext';
 const Hero = lazy(() => import('./pages/Hero'));
 const Projects = lazy(() => import('./pages/Projects'));
 const Skills = lazy(() => import('./pages/Skills'));
-import Footer from './Components/Footer';
 const About = lazy(() => import('./Components/About'));
 const Timeline = lazy(() => import('./Components/TImeline'));
-import ThemeContext from './contexts/ThemeContext';
 
 
 function App() {
